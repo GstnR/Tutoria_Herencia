@@ -24,8 +24,10 @@ public class Herrencia_Inventario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        //declaro un arreglo Lista con tipo Obejtos pero que se comporte como un arrayList vacio!!!
+        //esto permite que tenga una coleccion de objetos de timpos.
         List<Object> inventario = new ArrayList<>();
-        // TODO code application logic here
         
         //creo 7 variables del tipo objeto computadora, monitor e impresora
         Computadora computadora1 = new Computadora(Procesador.CORE_i9, Memoria.RAMx8G, 1, Marca.LG, true, "Administracio", Estado.STOCK);
