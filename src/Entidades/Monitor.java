@@ -11,7 +11,7 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public class Monitor extends ElementoInformatico{
+public class Monitor extends Elemento_Informatico{
     
     int pulgadas;
     String Color;

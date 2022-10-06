@@ -8,7 +8,7 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public abstract class ElementoInformatico {
+public abstract class Elemento_Informatico {
     
     int id;
     Marca marca;
@@ -16,7 +16,7 @@ public abstract class ElementoInformatico {
     String sector;
     Estado estado;
 
-    public ElementoInformatico(int id, Marca marca, boolean garantia, String sector, Estado estado) {
+    public Elemento_Informatico(int id, Marca marca, boolean garantia, String sector, Estado estado) {
         this.id = id;
         this.marca = marca;
         this.garantia = garantia;

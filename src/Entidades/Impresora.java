@@ -11,7 +11,7 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public final class Impresora extends ElementoInformatico{
+public final class Impresora extends Elemento_Informatico{
     
     boolean tintaColor;
 

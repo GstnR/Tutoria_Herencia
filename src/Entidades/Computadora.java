@@ -13,7 +13,7 @@ import Emuns.Procesador;
  *
  * @author Gaston Rojas
  */
-public class Computadora extends ElementoInformatico{
+public class Computadora extends Elemento_Informatico{
     
     Procesador procesador;
     Memoria memoria;
