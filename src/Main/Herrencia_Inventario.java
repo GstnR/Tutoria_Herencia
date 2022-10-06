@@ -66,7 +66,7 @@ public class Herrencia_Inventario {
         //filtrando por tipo impresora
         System.out.println("\nImpresoras\n---------------");
         for (Object object : inventario) {
-            System.out.println(object instanceof Impresora);
+            System.out.println("Es una impresora: " + (object instanceof Impresora));
             System.out.println(object.toString());
 
 
