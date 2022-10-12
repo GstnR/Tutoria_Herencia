@@ -69,7 +69,7 @@ public abstract class ElementoInformatico {
         return "Elemento id=" + id + ", marca=" + marca + ", garantia=" + garantia + ", sector=" + sector + ", estado=" + estado +"\n";
     }
     
-     public abstract void mostrar();
+     public abstract void mostrarElementoInformatico();
     
     
 }

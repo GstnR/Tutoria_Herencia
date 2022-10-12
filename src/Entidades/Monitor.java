@@ -30,7 +30,7 @@ public class Monitor extends ElementoInformatico{
     }
 
     @Override
-     public void mostrar() {
+     public void mostrarElementoInformatico() {
         System.out.println("\n-----------------\n");
         System.out.println(this.toString());
         

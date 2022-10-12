@@ -59,11 +59,16 @@ public class HerrenciaInventario {
         System.out.println("Ejecuntando el metodo mostrar en la definicion del\n metodo abstracto por cada clase hija");
         for (ElementoInformatico elementoInformatico : inventario) {
             
-            elementoInformatico.mostrar();
-            
+            elementoInformatico.mostrarElementoInformatico();
+            pausa();
         }
         
-        }  
+        }
+
+    private static void pausa() {
+        System.out.println("\nPresione una tecla para Continuar...");
+          new java.util.Scanner(System.in).nextLine();
+    }
         
     }
     
