@@ -11,7 +11,7 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public class Monitor extends Elemento_Informatico{
+public class Monitor extends ElementoInformatico{
     
     int pulgadas;
     String Color;
@@ -27,6 +27,26 @@ public class Monitor extends Elemento_Informatico{
     @Override
     public String toString() {
         return "Monitor: \n" + "pulgadas=" + pulgadas + ", Color=" + Color + ", entrada=" + entrada + "\n"+super.toString();
+    }
+
+    @Override
+     public void mostrar() {
+        System.out.println("\n-----------------\n");
+        System.out.println(this.toString());
+        
+        System.out.println("  \\n@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@  \n" +
+                           "  \\n@/////////////////////////////////@  \n" +
+                           "  \\n@.................,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@...............,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@..............,,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@............,,,,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@..........,,,,,,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@........,,,,,,,,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@.......,,,,,,,,,,,,,,,,,,,,,,,,,,@  \n" +
+                           "  \\n@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@  \n" +
+                           "                 \\n@@@@@@#                \n" +
+                           "                 \\n@@@@@@#");
+
     }
     
     

@@ -13,8 +13,8 @@ import Emuns.Procesador;
  *
  * @author Gaston Rojas
  */
-public class Computadora extends Elemento_Informatico{
-    
+public class Computadora extends ElementoInformatico {
+
     Procesador procesador;
     Memoria memoria;
 
@@ -29,6 +29,24 @@ public class Computadora extends Elemento_Informatico{
         return "Computadora: " + "procesador=" + procesador + ", memoria=" + memoria + "\n" + super.toString();
     }
 
-   
-    
+    @Override
+    public void mostrar() {        
+        System.out.println("\n-----------------\n");
+        System.out.println(this.toString());
+        
+        System.out.println("\\n@@@@@@&&&&&&&&&\n"
+                         + "\\n####//////////&\n"
+                         + "\\n@@@@@@@@@@@@@@@\n"
+                         + "\\n%##(((((((((((@\n"
+                         + "\\n%#%(((((((((((@\n"
+                         + "\\n@@@@@@@@@@@@@&&\n"
+                         + "\\n@@@&&&&&&&&&&&&\n"
+                         + "\\n@@@@&@@*@&&&&&&\n"
+                         + "\\n@@@@@@(@(&&&&&&\n"
+                         + "\\n@@@@@@@@&&&&&&&\n"
+                         + "\\n@@@@@@@@@@@@&&&\n"
+                         + "\\n@@@@@@@@@@@@@@@\n"
+                         + "\\n@@@@@@@@@@@@@@@");
+    }
+
 }

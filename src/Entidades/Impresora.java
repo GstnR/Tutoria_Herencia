@@ -11,7 +11,7 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public final class Impresora extends Elemento_Informatico{
+public final class Impresora extends ElementoInformatico{
     
     boolean tintaColor;
 
@@ -23,6 +23,28 @@ public final class Impresora extends Elemento_Informatico{
     @Override
     public String toString() {
         return "Impresora " + "color=" + tintaColor + "\n" + super.toString();
+    }
+
+    @Override
+   public void mostrar() {
+        System.out.println("\n-----------------\n");
+        System.out.println(this.toString());
+        
+        System.out.println("	    \\n.(((((((((((((((.        \n" +
+                       "            \\n.(((((((((((((((.         \n" +
+                       "         \\n%&,*(((((((((((((((,,&#.      \n" +
+                       "       \\n(&&,./(((((((((((((((/.,&&#.     \n" +
+                       "     \\n,&&&%%&&*****************%&&#&&.    \n" +
+                       "     \\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&    \n" +
+                       "     \\n&&&,                        *&&&    \n" +
+                       "     \\n&&#                          #&&    \n" +
+                       "     \\n&&&&&&&&&&&&&&&&&%&&&&&&&&&&&&&&    \n" +
+                       "     \\n&&&&&&#*****************#&&&&&&    \n" +
+                       "     \\n&&&&&&    _  _  _  _  _  &&&&&&    \n" +
+                       "         \\n&%                   %%        \n" +
+                       "         \\n#.  **************   ,%        \n" +
+                       "        \\n(&#&&&&&&&&&&&&&&&&&%%%(  ");
+
     }
     
     

@@ -8,15 +8,15 @@ import Emuns.Marca;
  *
  * @author Gaston Rojas
  */
-public abstract class Elemento_Informatico {
+public abstract class ElementoInformatico {
     
-    int id;
-    Marca marca;
-    boolean garantia;
-    String sector;
-    Estado estado;
+    private int id;
+    private Marca marca;
+    private boolean garantia;
+    private String sector;
+    private Estado estado;
 
-    public Elemento_Informatico(int id, Marca marca, boolean garantia, String sector, Estado estado) {
+    public ElementoInformatico(int id, Marca marca, boolean garantia, String sector, Estado estado) {
         this.id = id;
         this.marca = marca;
         this.garantia = garantia;
@@ -68,5 +68,8 @@ public abstract class Elemento_Informatico {
     public String toString() {
         return "Elemento id=" + id + ", marca=" + marca + ", garantia=" + garantia + ", sector=" + sector + ", estado=" + estado +"\n";
     }
+    
+     public abstract void mostrar();
+    
     
 }
