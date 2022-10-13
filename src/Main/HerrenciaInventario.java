@@ -52,13 +52,26 @@ public class HerrenciaInventario {
         inventario.add(monitor2);
         inventario.add(monitor3);
         inventario.add(computadora3);
+        
+//        inventario.add(computadora1);
+//        inventario.add(computadora2);
+//        inventario.add(computadora3);
+//        inventario.add(monitor1);
+//        inventario.add(monitor2);
+//        inventario.add(monitor3);
+//        inventario.add(impresora);
+       
 
         //Uso un for each para poder recorrer el la lista y utilizar el metodo declarado en las clases hijas.
         System.out.println("Ejecuntando el metodo mostrar en la definicion del\n metodo abstracto por cada clase hija");
         for (ElementoInformatico elementoInformatico : inventario) {
 
-            elementoInformatico.mostrarElementoInformatico();
+            System.out.println("\n\n-----------------------\n");
+            System.out.println("El ID de ElementosInformaticos es: " + elementoInformatico.getId());
 
+            elementoInformatico.mostrarElementoInformatico();
+            
+            
         }
 
     }

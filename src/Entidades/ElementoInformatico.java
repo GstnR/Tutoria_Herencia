@@ -10,10 +10,10 @@ import Emuns.Marca;
 public abstract class ElementoInformatico {
 
     private int id;
-    private Marca marca;
-    private boolean garantia;
-    private String sector;
-    private Estado estado;
+    protected  Marca marca;
+    protected  boolean garantia;
+    protected  String sector;
+    protected  Estado estado;
 
     public ElementoInformatico(int id, Marca marca, boolean garantia, String sector, Estado estado) {
         this.id = id;
@@ -23,43 +23,43 @@ public abstract class ElementoInformatico {
         this.estado = estado;
     }
 
-    private int getId() {
+    public int getId() {
         return id;
     }
 
-    private Marca getMarca() {
+    public  Marca getMarca() {
         return marca;
     }
 
-    private boolean isGarantia() {
+    public  boolean isGarantia() {
         return garantia;
     }
 
-    private String getSector() {
+    public  String getSector() {
         return sector;
     }
 
-    private Estado getEstado() {
+    public  Estado getEstado() {
         return estado;
     }
 
-    private void setId(int id) {
+    public  void setId(int id) {
         this.id = id;
     }
 
-    private void setMarca(Marca marca) {
+    public  void setMarca(Marca marca) {
         this.marca = marca;
     }
 
-    private void setGarantia(boolean garantia) {
+    public  void setGarantia(boolean garantia) {
         this.garantia = garantia;
     }
 
-    private void setSector(String sector) {
+    public  void setSector(String sector) {
         this.sector = sector;
     }
 
-    private void setEstado(Estado estado) {
+    public  void setEstado(Estado estado) {
         this.estado = estado;
     }
 
@@ -69,5 +69,6 @@ public abstract class ElementoInformatico {
     }
 
     public abstract void mostrarElementoInformatico();
+    
 
 }

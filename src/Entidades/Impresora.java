@@ -27,7 +27,7 @@ public final class Impresora extends ElementoInformatico{
 
     @Override
    public void mostrarElementoInformatico() {
-        System.out.println("\n-----------------\n");
+        System.out.println("\n-----------------");
         System.out.println(this.toString());
         
         System.out.println("	    \\n.(((((((((((((((.        \n" +
