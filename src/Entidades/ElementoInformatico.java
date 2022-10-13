@@ -9,7 +9,7 @@ import Emuns.Marca;
  */
 public abstract class ElementoInformatico {
 
-    private int id;
+    protected int id;
     protected  Marca marca;
     protected  boolean garantia;
     protected  String sector;
