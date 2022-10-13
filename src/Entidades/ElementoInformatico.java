@@ -1,4 +1,3 @@
-
 package Entidades;
 
 import Emuns.Estado;
@@ -9,7 +8,7 @@ import Emuns.Marca;
  * @author Gaston Rojas
  */
 public abstract class ElementoInformatico {
-    
+
     private int id;
     private Marca marca;
     private boolean garantia;
@@ -66,10 +65,9 @@ public abstract class ElementoInformatico {
 
     @Override
     public String toString() {
-        return "Elemento id=" + id + ", marca=" + marca + ", garantia=" + garantia + ", sector=" + sector + ", estado=" + estado +"\n";
+        return "Elemento id=" + id + ", marca=" + marca + ", garantia=" + garantia + ", sector=" + sector + ", estado=" + estado + "\n";
     }
-    
-     public abstract void mostrarElementoInformatico();
-    
-    
+
+    public abstract void mostrarElementoInformatico();
+
 }
